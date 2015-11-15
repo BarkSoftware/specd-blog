@@ -11,6 +11,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'fog'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -65,3 +66,5 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 
 # The default authentication adapter
 gem 'refinerycms-authentication-devise', '~> 1.0'
+# blog engine
+gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
